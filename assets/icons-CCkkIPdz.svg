@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
+    <defs>
+        <symbol id="icon-bars" viewBox="0 0 24 28"><path d="M24 21v2c0 .547-.453 1-1 1H1c-.547 0-1-.453-1-1v-2c0-.547.453-1 1-1h22c.547 0 1 .453 1 1zm0-8v2c0 .547-.453 1-1 1H1c-.547 0-1-.453-1-1v-2c0-.547.453-1 1-1h22c.547 0 1 .453 1 1zm0-8v2c0 .547-.453 1-1 1H1c-.547 0-1-.453-1-1V5c0-.547.453-1 1-1h22c.547 0 1 .453 1 1z"/></symbol>
+        <symbol id="icon-chevron-thin-left" viewBox="0 0 20 20"><path d="M13.891 17.418c.268.272.268.709 0 .979s-.701.271-.969 0l-7.83-7.908a.697.697 0 0 1 0-.979l7.83-7.908c.268-.27.701-.27.969 0s.268.709 0 .979L6.75 10l7.141 7.418z"/></symbol>
+        <symbol id="icon-play3" viewBox="0 0 32 32"><path d="m6 4 20 12L6 28z"/></symbol>
+        <symbol id="icon-pause2" viewBox="0 0 32 32"><path d="M4 4h10v24H4zm14 0h10v24H18z"/></symbol>
+        <symbol id="icon-backward2" viewBox="0 0 32 32"><path d="M18 5v10L28 5v22L18 17v10L7 16z"/></symbol>
+        <symbol id="icon-forward3" viewBox="0 0 32 32"><path d="M16 27V17L6 27V5l10 10V5l11 11z"/></symbol>
+    </defs>
+</svg>

@@ -11,12 +11,54 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Music Player</title>
     <script type="module" crossorigin src="/music-player/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/music-player/assets/index-BPiLuGQV.css">
+    <link rel="stylesheet" crossorigin href="/music-player/assets/index-BVOqCnTn.css">
   </head>
   <body>
-    <main></main>
-
+    <main>
+      <div class="container">
+        <nav>
+          <div class="circle">
+            <svg
+              class="icon back-icon"
+              width="40"
+              height="40"
+              aria-label="back icon"
+            >
+              <use href="/music-player/assets/icons-CCkkIPdz.svg#icon-chevron-thin-left"></use>
+            </svg>
+          </div>
+          <div class="circle">
+            <svg class="icon" width="40" height="40" aria-label="menu icon">
+              <use href="/music-player/assets/icons-CCkkIPdz.svg#icon-bars"></use>
+            </svg>
+          </div>
+        </nav>
+        <img
+          src="/music-player/assets/468-thumbnail-BSNndBS0.png"
+          width="150"
+          height="150"
+          alt="Thumbnail"
+        />
+        <h1>Music name</h1>
+        <h2>Singer</h2>
+        <audio controls>
+          <source
+            src="/music-player/assets/01.%20Stacy's%20Mom_F_minor__bpm_118-Ctkx6hUH.mp3"
+            type="audio/mpeg"
+          />
+        </audio>
+        <!-- <i class="fa-solid fa-play"></i>
+          <i class="fa-solid fa-backward"></i>
+          <i class="fa-solid fa-forward"></i> -->
+      </div>
+    </main>
   </body>
 </html>
