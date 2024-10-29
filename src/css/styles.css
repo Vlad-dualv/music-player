@@ -36,14 +36,13 @@ img {
 
 .icon {
   display: block;
-  width: 1em;
-  height: 1em;
   stroke-width: 0;
   stroke: currentColor;
   fill: rgb(185, 18, 157);
   padding: 10px;
   width: 35px;
   height: 35px;
+  cursor: pointer;
 }
 
 audio {
@@ -68,16 +67,195 @@ nav {
   margin-bottom: 30px;
 }
 
+img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 5px solid whitesmoke;
+  box-shadow: 1px 2px 10px rgb(224, 178, 204);
+  margin-bottom: 20px;
+}
+
+.icon {
+  display: block;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: rgb(185, 18, 157);
+  padding: 10px;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+
 .circle {
   background-color: rgb(255, 255, 255);
   border-radius: 50%;
+  box-shadow: 1px 5px 10px rgb(224, 178, 204);
+}
+
+#progress {
+  appearance: none;
+  width: 100%;
+  height: 6px;
+  background-color: rgb(185, 18, 157);
+  cursor: pointer;
+  border-radius: 4px;
+  margin: 40px 0;
+}
+
+#progress::-webkit-slider-thumb {
+  appearance: none;
+  background-color: rgb(185, 18, 157);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 7px solid whitesmoke;
   box-shadow: 1px 2px 10px rgb(224, 178, 204);
 }
 
-h2 {
-  margin-bottom: 20px;
+.controls {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  gap: 20px;
 }
 
-audio {
-  margin-bottom: 20px;
+.backward-icon,
+.forward-icon {
+  width: 45px;
+  height: 45px;
+  padding: 13px;
+}
+
+.play-icon {
+  width: 65px;
+  height: 65px;
+  padding: 20px;
+  background-color: rgb(185, 18, 157);
+  fill: whitesmoke;
+  border-radius: 50%;
+}
+
+.icon:active {
+  transform: scale(1.1);
+}
+
+/**************************************TABLET**********************************/
+
+@media screen and (min-width: 768px) {
+  .container {
+    margin: 100px auto;
+    padding: 30px;
+    width: 70%;
+    height: 70vh;
+  }
+
+  nav {
+    margin-bottom: 40px;
+  }
+
+  img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .icon {
+    padding: 12px;
+    width: 45px;
+    height: 45px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+
+  #progress {
+    appearance: none;
+    width: 100%;
+    height: 6px;
+    background-color: rgb(185, 18, 157);
+    cursor: pointer;
+    border-radius: 4px;
+    margin: 60px 0;
+  }
+
+  .controls {
+    gap: 30px;
+  }
+
+  .backward-icon,
+  .forward-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .play-icon {
+    width: 85px;
+    height: 85px;
+    padding: 15px;
+  }
+}
+
+/**************************************DESKTOP**********************************/
+
+@media screen and (min-width: 1280px) {
+  .container {
+    padding: 30px;
+    width: 50%;
+    height: 850px;
+  }
+
+  nav {
+    margin-bottom: 60px;
+  }
+
+  img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .icon {
+    padding: 15px;
+    width: 60px;
+    height: 60px;
+  }
+
+  h1 {
+    font-size: 35px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  #progress {
+    height: 8px;
+    margin: 80px 0;
+  }
+
+  .controls {
+    gap: 40px;
+  }
+
+  .backward-icon,
+  .forward-icon {
+    width: 80px;
+    height: 80px;
+  }
+
+  .play-icon {
+    width: 100px;
+    height: 100px;
+    padding: 15px;
+  }
+
+  .icon:hover,
+  .icon:focus {
+    transform: scale(1.1);
+  }
 }
