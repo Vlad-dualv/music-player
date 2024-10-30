@@ -4,13 +4,13 @@
               height="40"
               aria-label="play icon"
             >
-              <use href="https://github.com/Vlad-dualv/music-player/blob/main/src/img/icons.svg#icon-play3"></use>
+              <use src="https://github.com/Vlad-dualv/music-player/blob/main/src/img/icons.svg#icon-play3"></use>
             </svg>`,n=!1):(o.play(),c.playControl.innerHTML=`<svg
               class="icon play-icon"
               width="40"
               height="40"
               aria-label="pause icon"
             >
-              <use href="https://github.com/Vlad-dualv/music-player/blob/main/src/img/icons.svg#icon-pause2"></use>
+              <use src="https://github.com/Vlad-dualv/music-player/blob/main/src/img/icons.svg#icon-pause2"></use>
             </svg>`,n=!0)}o.addEventListener("timeupdate",function(){r.value=o.currentTime});r.oninput=function(){o.play(),o.currentTime=r.value,n=!1,a()};
 //# sourceMappingURL=index.js.map
