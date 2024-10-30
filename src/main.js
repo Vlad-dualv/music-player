@@ -24,7 +24,7 @@ function playPause() {
               height="40"
               aria-label="play icon"
             >
-              <path d="m6 4 20 12L6 28z"></path>
+              <use href="./img/icons.svg#icon-play3"></use>
             </svg>`;
     isPlaying = false;
   } else {
@@ -35,7 +35,7 @@ function playPause() {
               height="40"
               aria-label="pause icon"
             >
-              <path d="M4 4h10v24H4zm14 0h10v24H18z"></path>
+              <use href="./img/icons.svg#icon-pause2"></use>
             </svg>`;
     isPlaying = true;
   }
