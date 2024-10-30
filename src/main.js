@@ -24,20 +24,24 @@ function playPause() {
               height="40"
               aria-label="play icon"
             >
-              <use href="/img/icons.svg#icon-play3"></use>
+              <use href="./img/icons.svg#icon-play3"></use>
             </svg>`;
     isPlaying = false;
   } else {
     song.play();
-    controls.playControl.innerHTML = `<svg
+    controls.playControl.innerHTML = displayIcon();
+    isPlaying = true;
+  }
+
+  function displayIcon() {
+    return `<svg
               class="icon play-icon"
               width="40"
               height="40"
               aria-label="pause icon"
             >
-              <use href="/img/icons.svg#icon-pause2"></use>
+              <use href="./img/icons.svg#icon-pause2"></use>
             </svg>`;
-    isPlaying = true;
   }
 }
 
