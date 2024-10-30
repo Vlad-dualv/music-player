@@ -4,13 +4,13 @@
               height="40"
               aria-label="play icon"
             >
-              <use href=".src/img/icons.svg#icon-play3"></use>
+              <use href="./src/img/icons.svg#icon-play3"></use>
             </svg>`,n=!1):(r.play(),c.playControl.innerHTML=`<svg
               class="icon play-icon"
               width="40"
               height="40"
               aria-label="pause icon"
             >
-              <use href=".src/img/icons.svg#icon-pause2"></use>
+              <use href="./src/img/icons.svg#icon-pause2"></use>
             </svg>`,n=!0)}r.addEventListener("timeupdate",function(){o.value=r.currentTime});o.oninput=function(){r.play(),r.currentTime=o.value,n=!1,a()};
 //# sourceMappingURL=index.js.map
