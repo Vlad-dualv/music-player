@@ -18,34 +18,26 @@ controls.playControl.addEventListener('click', playPause);
 function playPause() {
   if (isPlaying) {
     song.pause();
-    controls.playControl.innerHTML = displayPlayIcon();
-    isPlaying = false;
-  } else {
-    song.play();
-    controls.playControl.innerHTML = displayPauseIcon();
-    isPlaying = true;
-  }
-
-  function displayPlayIcon() {
-    return `<svg
+    controls.playControl.innerHTML = `<svg
               class="icon play-icon"
               width="40"
               height="40"
               aria-label="play icon"
             >
-              <use href="./img/icons.svg#icon-play3"></use>
+              <use href="https://github.com/Vlad-dualv/music-player/blob/main/src/img/icons.svg#icon-play3"></use>
             </svg>`;
-  }
-
-  function displayPauseIcon() {
-    return `<svg
+    isPlaying = false;
+  } else {
+    song.play();
+    controls.playControl.innerHTML = `<svg
               class="icon play-icon"
               width="40"
               height="40"
               aria-label="pause icon"
             >
-              <use href="./img/icons.svg#icon-pause2"></use>
+              <use href="https://github.com/Vlad-dualv/music-player/blob/main/src/img/icons.svg#icon-pause2"></use>
             </svg>`;
+    isPlaying = true;
   }
 }
 
