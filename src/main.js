@@ -18,7 +18,16 @@ controls.playControl.addEventListener('click', playPause);
 function playPause() {
   if (isPlaying) {
     song.pause();
-    controls.playControl.innerHTML = `<svg
+    controls.playControl.innerHTML = displayPlayIcon();
+    isPlaying = false;
+  } else {
+    song.play();
+    controls.playControl.innerHTML = displayPauseIcon();
+    isPlaying = true;
+  }
+
+  function displayPlayIcon() {
+    return `<svg
               class="icon play-icon"
               width="40"
               height="40"
@@ -26,14 +35,9 @@ function playPause() {
             >
               <use href="./img/icons.svg#icon-play3"></use>
             </svg>`;
-    isPlaying = false;
-  } else {
-    song.play();
-    controls.playControl.innerHTML = displayIcon();
-    isPlaying = true;
   }
 
-  function displayIcon() {
+  function displayPauseIcon() {
     return `<svg
               class="icon play-icon"
               width="40"
